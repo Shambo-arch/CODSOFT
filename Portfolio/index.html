@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, nofollow">
+    <meta name="author" content="SHAMBO Louis Marie">
+    <link rel="icon" type="image.png" href="./Images/Logo Original.png" width="32px" height="32px">
+
+    <!-- Icon custom link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS Custom Link -->
+    <link rel="stylesheet" href="style.css">
+    <title>Shambo Portfolio</title>
+
+</head>
+<body>
+
+    <!-- The header section starts -->
+    <header>
+        <div class="header">
+                <a href="#"><img src="Images/Logo Original.png" alt="" width="90px" height="90px" style="margin-left: 30px;"></a>
+                
+            <nav class="nav-bar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#proficiency">Proficiency</a></li>
+                <li><a href="#open-source">Open Source</a></li>
+                <li><a href="#big-projects">Big projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="menu-button"><i class="fa-solid fa-bars"></i></div>
+       </div>
+    <script>
+        let menu = document.querySelector('#menu-button');
+        let navbar = document.querySelector('.header .nav-bar');
+        
+        menu.onclick = () =>{
+            menu.classList.toggle('fa-bars');
+            navbar.classList.toggle('active');
+
+            window.onscroll = () =>{
+                menu.classList.remove ('fa-bars');
+                navbar.classList.remove ('active')
+            }
+        }
+    </script>
+    </header>
+    <!-- the header section ends -->  
+
+   <!-- The home section starts -->
+    <section class="container" id="home">
+      <div class="identification">
+            <div class="detail">
+                <h3>Hi all!</h3> 
+                <h2>I am <span>SHAMBO Louis Marie 👋</span></h2>
+                <p>A Frontend web developer, having an experience of building beautiful websites, and user interfaces of web and moblile 
+                    applications using HTML, CSS, JavaScript, React.Js, Figma and AdobeXD.
+                </p>
+                <button onclick="window.open('SHAMBO Louis Marie_CV.pdf' , '_blank')">Download My CV</button>
+                <div class="icons">
+                    <a href="https://www.facebook.com/shambo.louis" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/shambo_kishambo" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/shambo-louis-marie/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Shambo-arch" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            
+            <div class="myImage">
+                <img src="Images/5 final.png" alt="" class="myimg">
+            </div>
+            
+        </div>
+       </div> 
+    </section>
+    <!-- The home section ends -->
+
+    <!-- The about section starts -->
+    <section class="container1" id="about">
+     <div class="identification">
+        <div class="myImage1">
+            <img src="Images/6109659.webp" width="600px" height="600px" style="margin-top: 50px;">
+        </div>
+        <div class="detail1">
+            <h3>What I do</h3>
+            <p>I am an enthusiastic frontend developer, who is exploring every technology<br> related to web development. </p>
+           <div class="icons1">
+           
+                <img src="Images/html5.png" alt="" width="72px" height="72px">
+                <img src="Images/css.webp" alt="" width="72px" height="72px">
+                <img src="Images/JavaScript.png" alt="" width="72px" height="72px">
+                <img src="Images/react.png" alt="" width="72px" height="72px">
+                <img src="Images/git.png" alt="" width="72px" height="72px">
+                <img src="Images/github.png" alt="" width="72px" height="72px"> 
+
+                <div class="paragraph">
+                    <p>
+                        <ul>
+                  <li>⚡️ Using above technologies to create, manage websites according to clients wishes<br> and expectations.</li><br>
+                  <li>⚡️ Design, Develop highly interactive Frontend / user interfaces for web Applications.</li><br>
+                  <li>⚡️ Integration of third party serices such as Rest APIs, Databases, up to deployment.</li>
+                </ul> 
+                    </p>
+                </div>
+            </div>
+        </div> 
+      </div>
+    </section>
+    <!-- The about section ends -->
+
+
+    <!-- Proficiency section starts - -->
+    <section class="container" id="proficiency">
+        <div class="proficiency">
+        <div class="range">
+            <h2>Proficiency</h2>
+            <span>HTML/CSS</span>
+            <input type="range"  class="input" name="Html/CSS" min="0" max="100" value="96" disabled><br>
+            <span>JavaScript</span>
+            <input type="range" class="input" name="JavaScript" min="0" max="100" value="70" disabled><br>
+            <span>ReactJs</span>
+            <input type="range" class="input" name="ReactJs" min="0" max="100" value="60" disabled><br>
+            <span>UI/UX Design Figma and AdobeXD</span>
+            <input type="range" class="input" name="UI/UX" min="0" max="100" value="70" disabled><br>
+            <span>Git & GitHub</span>
+            <input type="range" class="input" name="Git/GitHub" min="0" max="100" value="90" disabled><br>
+        </div>
+        <div class="myImage2">
+            <img src="Images/4 (1)-min.png"> 
+        </div>
+    </div>
+    </section>
+    <!-- Proficiency section ends -->
+
+
+    <!-- Open Source section starts -->
+    <section class="container2" id="open-source">
+        <h2 class="open">Open Source Projects</h2>
+        <div class="open-source">
+            <div class="cards">
+             <h3>Chorale Saint Dominique Website</h3><br>
+             <a href="https://csdk.rw" target="_blank">Choir website👉Click here for view😍</a>
+             <p>🟡Tools: HTML, CSS, JavaScript</p><span>125676 KB</span>
+            </div>
+            <div class="cards">
+                <h3>BNN Ltd Website</h3><br>
+                <a href="https://bnnltd.com" target="_blank">Construction website, 👉Click here for view😍</a>
+                <p>🟡Tools: HTML, CSS, JavaScript</p><span>9676 KB</span>
+            </div>
+            <div class="cards">
+                <h3>Personal Portfolio Website</h3><br>
+                <a href="https://kishambo.com" target="_blank">My recent personal website👉Click here for view😍</a>
+                <p>🟡Tools: WordPress</p><span>21676 KB</span>
+            </div>
+            <div class="cards">
+                <h3>Real Estate Website</h3><br>
+                <a href="https://cityestates.bubbleapps.io/version-test" target="_blank">👉Click here for view😍</a>
+                <p>🟡Tools: Bubble.io</p> <span>325676 KB</span>
+            </div>
+        </div>
+    </section>
+    <!-- Open source section ends -->
+
+    <!-- Big projects section starts -->
+    <section class="container" id="big-projects">
+        <h2 class="open">Big Projects</h2>
+        <div class="logos">
+            <a href="https://product-hunt-93357.bubbleapps.io/version-test/" target="_blank"><img src="Images/product-hunt.png" alt="Product Hunt Clone"></a>
+            <a href="https://party-rsvp-83036.bubbleapps.io/version-test" target="_blank"><img src="Images/partrsvp.png" alt="Party RSVP Clone" width="300px" heigt="166px"></a>
+        </div>
+    </section>
+     <!-- Big projects section ends -->
+
+
+
+     <!-- Achievement section starts -->
+    <section class="container3" id="achievements">
+        <h2 class="achievements">Achievements and Certification</h2>
+        <span>ACHIEVEMENTS, CERTIFICATIONS AWARD LETTERS AND SOME COOL STUFF I HAVE DONE!</span>
+        <div class="whole">
+            <div class="sub-container">
+                <img src="Images/Frontend,Certificate.jpg" alt="" width="300px">
+                <div class="paragraphe"> <h3>HTML, CSS, Finalist PIRPLE</h3>
+                <P>Completed the HTML, CSS course at pirple.com and got a certificate after doing required assignments and projects successfully</P>
+            </div>
+            </div>
+
+                <div class="sub-container">
+                    <img src="Images/JavaScript, Certificate.jpg" alt="" width="300px">
+                    <div class="paragraphe"> <h3>JavaScript, Finalist PIRPLE</h3>
+                    <P>Completed the JavaScript course at pirple.com and got a certificate after doing required assignments and projects successfully</P>
+                </div>
+                </div>
+
+                    <div class="sub-container">
+                        <img src="Images/Bubble,certificate.jpg" alt="" width="300px">
+                       <div class="paragraphe"><h3>Bubble.io at UDEMY</h3>
+                        <P>Completed the Bubble.io course at pirple.com and got a certificate after doing required assignments and projects successfully</P>
+                    </div>
+                    </div>
+        </div>
+    </section>
+    <!-- Achievement section ends -->
+     
+
+    <!-- Blogs section starts -->
+    <section class="blogs" id="blogs">
+        <h2 class="achievements">Blogs</h2>
+        <span>With Love For Developing Cool Stuff, I Love To Write And Teach Others What I Have Learned.</span>
+        <div class="whole">
+            <div class="sub-container1">
+                <div class="paragraphe"> <h3><a href="https://www.educba.com/uses-of-html/">⭐️WHY USING HTML and CSS?</a></h3>
+                <P>HTML and CSS are scripting languages used to create a web page and web applications. HTML provides web page structure, where as CSS is mainly used to control web page styling.</P>
+            </div>
+            </div>
+
+                <div class="sub-container1">
+                    <div class="paragraphe"> <h3><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript"> ⭐️JavaScript the language of building dynamic websites and applications.</a></h3>
+                    <P>JavaScript is an open-source programming language. It is designed for creating web-centric applications. It is lightweight and interpreted, which makes it much faster than other languages. JavaScript is integrated with HTML, which makes it easier to implement JavaScript in web applications.</P>
+                </div>
+                </div>
+
+                    <div class="sub-container1">
+                       <div class="paragraphe"><h3><a href="https://dev.to/kalashin1/7-reasons-why-react-is-king-of-javascript-ui-frameworks-1j76">⭐️Why is React The Best Framework?</a></h3>
+                  <P>One of the main benefits of using React JS is its potential to reuse components. It saves time for developers as they don't have to write various codes for the same features. Furthermore, if any changes are made in any particular part, it will not affect other parts of the application.</P>
+                    </div>
+                    </div>
+                </div>
+    </section>
+    <!-- Blogs section ends -->
+
+    <!-- Reach out section starts -->
+    <section class="reach-out">
+        <h2>Reach out to me!</h2>
+      <div class="reach">
+     <div class="img-contact"><a href="contact.html"><img src="Images/write to us.jfif" alt=""></a></div>
+     <a href="contact.html">Click here to contact us</a>
+    </div>
+    </section>
+    <!-- Reach out section ends -->
+
+    <!-- Footer section starts -->
+    <section class="footer">
+     <div class="box-container">
+          <div class="box">
+            <h2>Quick links</h2>
+                <a href="#home">Home</a>
+                <a href="#about">About me</a>
+                <a href="#proficiency">Proficiency</a>
+                <a href="#open-source">Open Source</a>
+                <a href="#big-projects">Big projects</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#blogs">Blogs</a>
+                <a href="contact.html">Contact</a>
+           </div>
+
+           <div class="box">
+            <h2>contact info</h2>
+            <a href="#"><span>Tel: </span>+250785250953</a>
+            <a href="#"><span>Email: </span>lshambo96@gmail.com</a>
+            <a href="#"><span>Address: </span>KG 649 st 33 Kigali, Rwanda</a>
+           </div>
+
+           <div class="box">
+            <h2>Social Media</h2>
+            <a href="https://www.facebook.com/shambo.louis" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+            <a href="https://www.instagram.com/shambo_kishambo" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="https://www.linkedin.com/in/shambo-louis-marie/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/Shambo-arch" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+           </div>
+        </div>
+ <div class="credit"><span>Louis Marie SHAMBO</span> Portfolio || All right reserved || copywrite 2024.</div>  
+    </section>
+    <!-- Footer section ends -->
+</body>
+</html>
